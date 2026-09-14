@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cairo, Markazi_Text } from "next/font/google";
 import { siteConfig } from "@/config/site";
+import { CartProvider } from "@/context/CartContext";
 import "./globals.css";
 
 const cairo = Cairo({
@@ -25,7 +26,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       dir="rtl"
       className={`${cairo.variable} ${markaziText.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <CartProvider>{children}</CartProvider>
+      </body>
     </html>
   );
 }

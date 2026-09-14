@@ -2,6 +2,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { whatsappUrl } from "@/data/branches";
 import { siteConfig } from "@/config/site";
+import { CartIcon } from "@/components/cart";
 
 export default function SiteHeader() {
   return (
@@ -19,6 +20,7 @@ export default function SiteHeader() {
               </Link>
             ))}
           </nav>
+          <CartIcon />
           <a
             href={whatsappUrl}
             target="_blank"

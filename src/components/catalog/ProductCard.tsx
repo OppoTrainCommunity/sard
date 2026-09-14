@@ -2,6 +2,7 @@ import { whatsappUrl } from "@/data/branches";
 import { formatPrice } from "@/lib/catalog";
 import type { Product } from "@/types/catalog";
 import ProductPlaceholder from "./ProductPlaceholder";
+import { AddToCartControl } from "@/components/cart";
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
@@ -23,13 +24,24 @@ export default function ProductCard({ product }: { product: Product }) {
             تواصل معنا للسعر
           </a>
         ) : (
-          <ul className="mt-auto flex flex-col gap-1 text-sm text-brand-ink/80">
+          <ul className="mt-auto flex flex-col gap-2 text-sm text-brand-ink/80">
             {product.variants.map((variant, i) => (
               <li key={i} className="flex items-center justify-between gap-3">
-                <span>{variant.label ?? "السعر"}</span>
-                <span className="font-semibold text-brand-teal-dark">
-                  {formatPrice(variant.price)}
+                <span className="flex flex-col">
+                  <span>{variant.label ?? "السعر"}</span>
+                  <span className="font-semibold text-brand-teal-dark">
+                    {formatPrice(variant.price)}
+                  </span>
                 </span>
+                <AddToCartControl
+                  id={`${product.id}__${i}`}
+                  productId={product.id}
+                  productName={product.name}
+                  productImage={product.image}
+                  categorySlug={product.category}
+                  variantLabel={variant.label}
+                  price={variant.price}
+                />
               </li>
             ))}
           </ul>

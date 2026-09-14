@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
-import CategoryCard from "@/components/CategoryCard";
+import { SiteHeader, SiteFooter } from "@/components/layout";
+import { CategoryCard } from "@/components/catalog";
 import { branches, whatsappUrl } from "@/data/branches";
 import { getAllProducts, getCategories, getCategoryImage, getProductsByCategory } from "@/lib/catalog";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "المتجر | سارد شوكولاتة",
+  title: `المتجر | ${siteConfig.name}`,
 };
 
 export default function CatalogPage() {

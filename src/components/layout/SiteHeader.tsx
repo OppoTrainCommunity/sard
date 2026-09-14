@@ -1,6 +1,7 @@
 import Link from "next/link";
-import Logo from "@/components/Logo";
+import Logo from "./Logo";
 import { whatsappUrl } from "@/data/branches";
+import { siteConfig } from "@/config/site";
 
 export default function SiteHeader() {
   return (
@@ -12,18 +13,11 @@ export default function SiteHeader() {
 
         <div className="flex items-center gap-6 sm:gap-8">
           <nav className="hidden gap-6 text-sm font-medium text-brand-ink/70 sm:flex">
-            <Link href="/" className="hover:text-brand-teal-dark">
-              الرئيسية
-            </Link>
-            <Link href="/catalog" className="hover:text-brand-teal-dark">
-              المتجر
-            </Link>
-            <Link href="/#delivery" className="hover:text-brand-teal-dark">
-              فروعنا
-            </Link>
-            <Link href="/#contact" className="hover:text-brand-teal-dark">
-              تواصل معنا
-            </Link>
+            {siteConfig.navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="hover:text-brand-teal-dark">
+                {link.label}
+              </Link>
+            ))}
           </nav>
           <a
             href={whatsappUrl}

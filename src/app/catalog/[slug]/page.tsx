@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
-import ProductCard from "@/components/ProductCard";
-import CategoryCard from "@/components/CategoryCard";
+import { SiteHeader, SiteFooter } from "@/components/layout";
+import { ProductCard, CategoryCard } from "@/components/catalog";
 import {
   formatCount,
   getCategories,
@@ -13,6 +11,7 @@ import {
   getCategoryImage,
   getProductsByCategory,
 } from "@/lib/catalog";
+import { siteConfig } from "@/config/site";
 
 export function generateStaticParams() {
   return getCategories().map((c) => ({ slug: c.slug }));
@@ -23,7 +22,7 @@ export async function generateMetadata({
 }: PageProps<"/catalog/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const category = getCategoryBySlug(slug);
-  return { title: category ? `${category.name} | سارد شوكولاتة` : "سارد شوكولاتة" };
+  return { title: category ? `${category.name} | ${siteConfig.name}` : siteConfig.name };
 }
 
 export default async function CategoryPage({ params }: PageProps<"/catalog/[slug]">) {

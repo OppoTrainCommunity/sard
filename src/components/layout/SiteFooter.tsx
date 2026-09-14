@@ -1,39 +1,31 @@
 import Link from "next/link";
-import Logo from "@/components/Logo";
+import Logo from "./Logo";
 import { branches, whatsappUrl } from "@/data/branches";
 import { getCategories } from "@/lib/catalog";
+import { siteConfig } from "@/config/site";
 
 export default function SiteFooter() {
   const featuredCategories = getCategories().slice(0, 5);
+  const quickLinks = siteConfig.navLinks.filter((link) => link.href !== "/#contact");
 
   return (
     <footer className="bg-brand-ink text-white">
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-x-8 gap-y-10 px-6 py-14 text-sm sm:px-12 md:grid-cols-4">
         <div className="col-span-2 md:col-span-1">
           <Logo theme="dark" />
-          <p className="mt-3 max-w-xs text-white/60">
-            شوكولاتة وهدايا شوكولاتة صناعة فلسطينية، نوصلها إلى بابك في نابلس وبيت لحم ورام الله.
-          </p>
+          <p className="mt-3 max-w-xs text-white/60">{siteConfig.description}</p>
         </div>
 
         <div>
           <p className="mb-4 font-semibold text-white">روابط سريعة</p>
           <ul className="flex flex-col gap-2 text-white/60">
-            <li>
-              <Link href="/" className="hover:text-brand-teal">
-                الرئيسية
-              </Link>
-            </li>
-            <li>
-              <Link href="/catalog" className="hover:text-brand-teal">
-                المتجر
-              </Link>
-            </li>
-            <li>
-              <Link href="/#delivery" className="hover:text-brand-teal">
-                فروعنا
-              </Link>
-            </li>
+            {quickLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:text-brand-teal">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -73,7 +65,7 @@ export default function SiteFooter() {
             💬 تواصل عبر واتساب
           </a>
           <a
-            href="https://www.facebook.com/sardchocolate"
+            href={siteConfig.facebookUrl}
             target="_blank"
             rel="noopener noreferrer"
             dir="ltr"
@@ -85,7 +77,7 @@ export default function SiteFooter() {
       </div>
 
       <div className="border-t border-white/10 px-6 py-5 text-center text-xs text-white/50 sm:px-12">
-        © {new Date().getFullYear()} سارد شوكولاتة. جميع الحقوق محفوظة.
+        © {new Date().getFullYear()} {siteConfig.name}. جميع الحقوق محفوظة.
       </div>
     </footer>
   );

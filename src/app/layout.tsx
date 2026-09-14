@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cairo, Markazi_Text } from "next/font/google";
+import { siteConfig } from "@/config/site";
 import "./globals.css";
 
 const cairo = Cairo({
@@ -13,9 +14,8 @@ const markaziText = Markazi_Text({
 });
 
 export const metadata: Metadata = {
-  title: "سارد شوكولاتة",
-  description:
-    "سارد — متجر شوكولاتة وهدايا شوكولاتة أونلاين، يوصل إلى نابلس وبيت لحم ورام الله.",
+  title: siteConfig.name,
+  description: siteConfig.description,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

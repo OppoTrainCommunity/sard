@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
-import CategoryCard from "@/components/CategoryCard";
-import FeaturedProductCard from "@/components/FeaturedProductCard";
+import { SiteHeader, SiteFooter } from "@/components/layout";
+import { CategoryCard, FeaturedProductCard } from "@/components/catalog";
 import { branches, whatsappUrl } from "@/data/branches";
 import { getAllProducts, getCategories, getCategoryImage, getProductsByCategory } from "@/lib/catalog";
+import { siteConfig } from "@/config/site";
 
 const CITIES = branches.map((b) => b.city);
 
@@ -128,7 +127,7 @@ export default function Home() {
                 <span dir="rtl">تواصل معنا عبر واتساب</span>
               </a>
               <a
-                href="https://www.facebook.com/sardchocolate"
+                href={siteConfig.facebookUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border border-white/30 px-8 py-3 text-sm font-semibold text-white hover:border-white"

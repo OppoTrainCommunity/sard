@@ -1,0 +1,514 @@
+{
+  "categories": [
+    {
+      "slug": "colored-chocolate",
+      "name": "شوكولاتة ملونة",
+      "description": "بألوان جذابة وحشوات متنوعة، كل قطعة بطعم مختلف ولذة خاصة.",
+      "order": 0
+    },
+    {
+      "slug": "wrapped-chocolate",
+      "name": "شوكولاتة مغلفة",
+      "description": "شوكولاتات مغلفة استثنائية، محشوة بحشوات أسطورية، تقدم في أفخم وأرقى بكج. الخيار المثالي لضيافة أسطورية.",
+      "order": 1
+    },
+    {
+      "slug": "iron-box",
+      "name": "بوكس الحديد",
+      "description": "شوكولاتات مغلفة فاخرة بحشوات أسطورية، مقدمة في بكج جديد فاخر. الخيار المثالي لهدية راقية ومميزة.",
+      "order": 2
+    },
+    {
+      "slug": "premium-baklava",
+      "name": "بقلاوة فاخرة",
+      "description": "طبقة غنية من البقلاوة مزينة بمكسرات متنوعة، تجمع بين الطراوة والقرمشة في كل قضمة، لتمنحك تجربة فاخرة ومميزة.",
+      "order": 3
+    },
+    {
+      "slug": "golden-crunchy-sweets",
+      "name": "حلويات ذهبية مقرمشة",
+      "description": "طعم غير مقاوم! طبقة مقرمشة محشوة بحشوات فاخرة صناعة وطنية بكل حب.",
+      "order": 4
+    },
+    {
+      "slug": "sard-truffles",
+      "name": "ترافيلز سارد",
+      "description": "طبقة من البسكوت اللذيذ، محشوة بحشوات مميزة، مقرمشة وخفيفة، ومغطاة بأفخر أنواع الشوكولاتات.",
+      "order": 5
+    },
+    {
+      "slug": "bird-nest",
+      "name": "عش بلبل",
+      "description": "كنافة ذهبية محمصة محشوة بالنكهات الأسطورية صنعت بحب.",
+      "order": 6
+    },
+    {
+      "slug": "wood-box",
+      "name": "بكج الخشب المميز",
+      "description": "صندوق خشبي أنيق يحمل بين طياته مختارات من شوكولاتات سارد الفاخرة، مثالي للهدايا والمناسبات الخاصة، بتصميم يجمع بين الفخامة والبساطة، ويقدم تجربة ضيافة لا تُنسى لكل من تحب.",
+      "order": 7
+    },
+    {
+      "slug": "sard-dates",
+      "name": "تمر سارد المميز",
+      "description": "نقدم لكم تجربة نكهة فاخرة، حيث أجود أنواع التمر محشوة بالمكسرات الطازجة ومغطاة بطبقة من الشوكولاتات الفاخرة.",
+      "order": 8
+    },
+    {
+      "slug": "diet-colored-chocolate",
+      "name": "شوكولاتة دايت ملونة",
+      "description": "لذة الشوكولاتات الملونة، بدون سكر مضاف! شوكولاتات سارد الدايت مصنوعة بعناية لمحبي الطعم الغني بأسلوب صحي، خيارك المثالي في كل لحظة حلوة.",
+      "order": 9
+    },
+    {
+      "slug": "baby-box",
+      "name": "بيبي بوكس",
+      "description": "بكجات البيبي من سارد، ألوان ناعمة، تغليف أنيق، وطعم يسرق القلوب، مناسب لكل هدية.",
+      "order": 10
+    },
+    {
+      "slug": "wrapped-chocolate-trays",
+      "name": "صحون الشوكولاتة المغلفة",
+      "description": "بكج مصمم بكل حب من الشوكولاتة المغلفة الأسطورية لضيافة فاخرة أو لهدية أنيقة تعبر عن مشاعرك.",
+      "order": 11
+    },
+    {
+      "slug": "legendary-wrapped-chocolate",
+      "name": "شوكولاتة مغلفة أسطورية",
+      "description": "وراء كل قطعة من ساند المغلفة الأسطورية، قصة من الفخامة والذوق الرفيع، تغليف يروي حكاية، وطعم يصنع أسطورة.",
+      "order": 12
+    },
+    {
+      "slug": "diet-wrapped-chocolate",
+      "name": "شوكولاتة دايت مغلفة",
+      "description": "لذة الشوكولاتات المغلفة، بدون سكر مضاف! شوكولاتات سارد الدايت مصنوعة بعناية لمحبي الطعم الغني بأسلوب صحي، خيارك المثالي في كل لحظة حلوة.",
+      "order": 13
+    },
+    {
+      "slug": "sard-bars",
+      "name": "ألواح شوكولاتة Sard",
+      "description": "ألواح شوكولاتة Sard مع تعيش لحظات من الفخامة والطعم الأسطوري، مع تنوع حشواتنا الاسطورية.",
+      "order": 14
+    },
+    {
+      "slug": "dubai-style-bars",
+      "name": "ألواح شوكولاتة دبي",
+      "description": "بصناعة وطنية من فلسطين، حشوات ألواح شوكولاتة دبي بشهادة الطعم فيها احنا مميزين.",
+      "order": 15
+    },
+    {
+      "slug": "premium-bars",
+      "name": "ألواح الشوكولاتة الفاخرة",
+      "description": "6 نكهات حكايات من الفخامة فقط من Sard اكسرها وجربها واستمتع بحشوتها. بقلاوة وفستق وحلبي، فراولة وبسكوت، كريمة الجندويا وبسكويت، كريمة غنية بالبندق وبسكويت، كراميل وبسكويت، زبدة الفستق السوداني.",
+      "order": 16
+    },
+    {
+      "slug": "bark-chocolate",
+      "name": "شوكولاتة تكسير",
+      "description": "طعم جربي، شكل مميز، وتفاصيل تذوب فيها الحواس هيك بتكون ألواح التكسير من ساد.",
+      "order": 17
+    },
+    {
+      "slug": "dragees",
+      "name": "الدراجية",
+      "description": "شوكولاتات ملونة ومبهجة مصممة خصيصا لأحبابنا الصغار، مثالي كهدية أو لمفاجآت الأعياد والحفلات.",
+      "order": 18
+    },
+    {
+      "slug": "elegant-favors",
+      "name": "توزيعات Sard الأنيقة",
+      "description": "شوكولاتات راقية، تغليف أنيق، وتصاميم تنسجم من أول نظرة اختاروا التوزيعة اللي بتليق بفرحتكم.",
+      "order": 19
+    },
+    {
+      "slug": "premium-nuts",
+      "name": "مكسرات سارد الفاخرة",
+      "description": "مكسرات فاخرة من سار، كل نوع يتم تحميصه بعناية بنكهة غنية ومذاق لا يقاوم.",
+      "order": 20
+    },
+    {
+      "slug": "sard-coffee",
+      "name": "قهوة سرد",
+      "description": "قهوة عربية أصيلة بتحميص مميز، بنكهة غنية تليق بضيافتكم.",
+      "order": 21
+    }
+  ],
+  "products": [
+    {
+      "id": "colored-chocolate-1",
+      "category": "colored-chocolate",
+      "name": "بوكس الشوكولاتة الملونة",
+      "description": null,
+      "variants": [
+        {
+          "label": "حجم صغير",
+          "price": 45
+        },
+        {
+          "label": "حجم وسط",
+          "price": 80
+        },
+        {
+          "label": "حجم كبير",
+          "price": 120
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Colored chocolate gift box, small size.",
+      "image": "/products/facebook/fb-01.jpg"
+    },
+    {
+      "id": "wrapped-chocolate-1",
+      "category": "wrapped-chocolate",
+      "name": "بكج المغلفة الكلاسيكية",
+      "description": null,
+      "variants": [
+        {
+          "label": "حجم وسط",
+          "price": 60
+        },
+        {
+          "label": "حجم كبير",
+          "price": 120
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Classic wrapped chocolate package, medium size.",
+      "image": "/products/facebook/fb-11.jpg"
+    },
+    {
+      "id": "iron-box-1",
+      "category": "iron-box",
+      "name": "بوكس الحديد كلاسيكي",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 100
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Luxury tin/metal box of assorted wrapped chocolates. Box text (English): 'LUXURY WRAPPED CHOCOLATE — WHEN HEAVEN MEETS YOUR SOUL'.",
+      "image": "/products/facebook/fb-10.png"
+    },
+    {
+      "id": "premium-baklava-1",
+      "category": "premium-baklava",
+      "name": "بقلاوة سارد الفاخرة",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 90
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Sard Premium Baklava assortment (almonds, pistachios, cashews). Box also labeled in English 'Sard Premium Baklava'.",
+      "image": "/products/facebook/fb-19.jpg"
+    },
+    {
+      "id": "golden-crunchy-sweets-1",
+      "category": "golden-crunchy-sweets",
+      "name": "حلويات ذهبية مقرمشة",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 90
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Box also labeled in English 'Crunchy Golden Sweets'. Assorted crispy phyllo cups with various toppings (sprinkles, nuts).",
+      "image": "/products/facebook/fb-17.jpg"
+    },
+    {
+      "id": "sard-truffles-1",
+      "category": "sard-truffles",
+      "name": "بكج الترافيلز",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 80
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Sard Truffles package. Box labeled in English 'Sard Chocolate Truffles'.",
+      "image": "/products/facebook/fb-04.jpg"
+    },
+    {
+      "id": "bird-nest-1",
+      "category": "bird-nest",
+      "name": "بكج عش البلبل",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 80
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Golden toasted kunafa nests with various colored fillings.",
+      "image": "/products/facebook/fb-18.jpg"
+    },
+    {
+      "id": "wood-box-1",
+      "category": "wood-box",
+      "name": "بكج الخشب المغلفة",
+      "description": null,
+      "variants": [
+        {
+          "label": "حجم وسط",
+          "price": 90
+        },
+        {
+          "label": "حجم كبير",
+          "price": 155
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Wooden box of wrapped chocolates, medium size. Wood box engraved with Sard chocolate logo.",
+      "image": "/products/facebook/fb-08.png"
+    },
+    {
+      "id": "wood-box-2",
+      "category": "wood-box",
+      "name": "بكج الخشب الملونة",
+      "description": null,
+      "variants": [
+        {
+          "label": "حجم وسط",
+          "price": 120
+        },
+        {
+          "label": "حجم كبير",
+          "price": 165
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Wooden box of colored chocolate, medium size.",
+      "image": "/products/facebook/fb-08.png"
+    },
+    {
+      "id": "sard-dates-1",
+      "category": "sard-dates",
+      "name": "تمر سارد المميز",
+      "description": null,
+      "variants": [
+        {
+          "label": "حجم صغير",
+          "price": 40
+        },
+        {
+          "label": "حجم وسط",
+          "price": 60
+        },
+        {
+          "label": "حجم كبير",
+          "price": 80
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Chocolate-coated dates stuffed with nuts, topped with pistachio/coconut, small size. Box labeled 'Sard Chocolate — Coated Date'.",
+      "image": "/products/facebook/fb-21.png"
+    },
+    {
+      "id": "diet-colored-chocolate-1",
+      "category": "diet-colored-chocolate",
+      "name": "بكج شوكولاتة دايت ملونة",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 55
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Sugar-free diet chocolate package. Box labeled in English 'SUGAR FREE — DIET CHOCOLATE'.",
+      "image": "/products/facebook/fb-02.jpg"
+    },
+    {
+      "id": "baby-box-1",
+      "category": "baby-box",
+      "name": "بيبي بوكس",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 80
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Baby-themed gift boxes, available as 'IT'S A BOY' (blue) or 'IT'S A GIRL' (pink) design; assorted colored/speckled chocolates inside.",
+      "image": "/products/facebook/fb-09.png"
+    },
+    {
+      "id": "wrapped-chocolate-trays-1",
+      "category": "wrapped-chocolate-trays",
+      "name": "صحون المغلفة الاستثنائية",
+      "description": null,
+      "variants": [],
+      "contactForPricing": true,
+      "notes": "Price listed as 'الاسعار حسب اختيار الزبون' (price depends on customer's selection) rather than a fixed number — decorative dome/cake arrangement of wrapped chocolates on a serving tray.",
+      "image": "/products/facebook/fb-07.png"
+    },
+    {
+      "id": "legendary-wrapped-chocolate-1",
+      "category": "legendary-wrapped-chocolate",
+      "name": "شوكولاتة المغلفة الأسطورية",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 75
+        },
+        {
+          "label": "الـ1 كيلو",
+          "price": 100
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Sold in a stand-up pouch bag.",
+      "image": "/products/facebook/fb-16.jpg"
+    },
+    {
+      "id": "diet-wrapped-chocolate-1",
+      "category": "diet-wrapped-chocolate",
+      "name": "شوكولاتة دايت مغلفة",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 140
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Sugar-free wrapped diet chocolates, assorted colors, served on a plate; includes a 'Sard diet' branded piece.",
+      "image": "/products/facebook/fb-14.jpg"
+    },
+    {
+      "id": "sard-bars-1",
+      "category": "sard-bars",
+      "name": "ألواح شوكولاتة 100 غم",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 10
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Weight: 100g bar. Flavors shown: Bisco Cream, Almond, Salted Caramel, Coconut (all Milk Chocolate).",
+      "image": "/products/facebook/fb-13.jpg"
+    },
+    {
+      "id": "sard-bars-2",
+      "category": "sard-bars",
+      "name": "ألواح شوكولاتة دايت 100 غم",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 12
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Weight: 100g bar, sugar-free ('No sugar'). Flavors shown: Almond Diet, Dark Chocolate Diet.",
+      "image": "/products/facebook/fb-15.jpg"
+    },
+    {
+      "id": "dubai-style-bars-1",
+      "category": "dubai-style-bars",
+      "name": "ألواح الترند",
+      "description": null,
+      "variants": [
+        {
+          "label": null,
+          "price": 12
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "'Dubai chocolate' style trend bars. Flavors shown: Bisco Cream & Kunafa, Pistachio & Kunafa (Milk Chocolate).",
+      "image": "/products/facebook/fb-17.jpg"
+    },
+    {
+      "id": "premium-bars-1",
+      "category": "premium-bars",
+      "name": "ألواح الشوكولاتة الفاخرة",
+      "description": null,
+      "variants": [
+        {
+          "label": "الحبة",
+          "price": 5
+        },
+        {
+          "label": "الكرتونة (60 حبة)",
+          "price": 300
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Priced per piece: '5 شيكل / الحبة' (5 ILS per piece) or '300 شيكل / الكرتونة 60 حبة' (300 ILS per carton of 60 pieces). Flavors shown on box: Peanut Butter, Hazelnut Cream, Strawberry & Biscuits, Baklava & Pistachio.",
+      "image": "/products/facebook/fb-12.jpg"
+    },
+    {
+      "id": "bark-chocolate-1",
+      "category": "bark-chocolate",
+      "name": "شوكولاتة تكسير",
+      "description": "طعم جربي، شكل مميز، وتفاصيل تذوب فيها الحواس هيك بتكون ألواح التكسير من ساد.",
+      "variants": [
+        {
+          "label": "الكيلو",
+          "price": 120
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Priced per kilo ('الكيلو 120 شيكل'). Combined category-intro + price slide (bark/'shatter' style chocolate slabs with nuts and dried fruit, milk and white chocolate visible in photo).",
+      "image": "/products/facebook/fb-22.png"
+    },
+    {
+      "id": "dragees-1",
+      "category": "dragees",
+      "name": "الدراجية",
+      "description": "شوكولاتات ملونة ومبهجة مصممة خصيصا لأحبابنا الصغار، مثالي كهدية أو لمفاجآت الأعياد والحفلات.",
+      "variants": [
+        {
+          "label": "الكيلو",
+          "price": 80
+        }
+      ],
+      "contactForPricing": false,
+      "notes": "Priced per kilo ('الكيلو 80 شيكل'). Combined category-intro + price slide — candy-coated chocolate dragées (colored shells: red, tan, blue) in glass jars/bags, aimed at kids.",
+      "image": "/products/facebook/fb-03.jpg"
+    },
+    {
+      "id": "elegant-favors-1",
+      "category": "elegant-favors",
+      "name": "توزيعات Sard الأنيقة",
+      "description": "شوكولاتات راقية، تغليف أنيق، وتصاميم تنسجم من أول نظرة اختاروا التوزيعة اللي بتليق بفرحتكم.",
+      "variants": [],
+      "contactForPricing": true,
+      "notes": null,
+      "image": "/products/facebook/fb-06.png"
+    },
+    {
+      "id": "premium-nuts-1",
+      "category": "premium-nuts",
+      "name": "مكسرات سارد الفاخرة",
+      "description": "مكسرات فاخرة من سار، كل نوع يتم تحميصه بعناية بنكهة غنية ومذاق لا يقاوم.",
+      "variants": [],
+      "contactForPricing": true,
+      "notes": null,
+      "image": "/products/facebook/fb-20.png"
+    },
+    {
+      "id": "sard-coffee-1",
+      "category": "sard-coffee",
+      "name": "قهوة سرد الفاخرة",
+      "description": "قهوة عربية أصيلة (Premium Coffee)، تحميص مختار بعناية.",
+      "variants": [],
+      "contactForPricing": true,
+      "notes": "Added 2026-09-14 from a photo the user shared directly (not from the original PDF menu). Pricing/sizes not yet provided by the user.",
+      "image": "/products/sard/sard-coffee.jpg"
+    }
+  ]
+}

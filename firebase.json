@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "site": "sard",
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "sard",
+          "region": "me-west1"
+        }
+      }
+    ]
+  }
+}

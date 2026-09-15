@@ -22,9 +22,9 @@ For local Firestore access, run `gcloud auth application-default login` once (si
 
 ## Deployment
 
-Live at **https://sard-256609110246.me-west1.run.app** (Cloud Run service `sard`, region `me-west1`).
+Live at **https://sard.web.app** (Firebase Hosting, proxying all requests to the Cloud Run service below — set up so the public URL is short; `firebase.json`/`.firebaserc` in the repo document that rewrite). The underlying Cloud Run service is also directly reachable at https://sard-256609110246.me-west1.run.app.
 
-Redeploy after changes:
+Redeploy the app after changes (Firebase Hosting's rewrite doesn't need to be touched again unless the Cloud Run service/region changes):
 
 ```bash
 docker build --platform linux/amd64 -t me-west1-docker.pkg.dev/sard-508612/sard-app/sard:latest .

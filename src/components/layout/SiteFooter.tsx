@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import SocialIcons from "./SocialIcons";
 import { branches, whatsappUrl } from "@/data/branches";
 import { getCategories } from "@/lib/catalog";
 import { siteConfig } from "@/config/site";
@@ -64,15 +65,9 @@ export default function SiteFooter() {
           >
             💬 تواصل عبر واتساب
           </a>
-          <a
-            href={siteConfig.facebookUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            dir="ltr"
-            className="mt-2 block w-fit text-white/60 hover:text-brand-teal"
-          >
-            facebook.com/sardchocolate
-          </a>
+          <div className="mt-4">
+            <SocialIcons />
+          </div>
         </div>
       </div>
 

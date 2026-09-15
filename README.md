@@ -5,8 +5,8 @@ Online chocolate and chocolate gift shop delivering in Nablus, Bethlehem, and Ra
 ## Stack
 
 - **Framework:** Next.js (App Router, TypeScript, Tailwind CSS)
-- **Backend/data:** Firestore, accessed server-side only via the Admin SDK (see `src/lib/firebase/admin.ts`)
-- **Hosting:** Google Cloud (project `sard-508612`)
+- **Backend/data:** Firestore (`me-west1`), accessed server-side only via the Admin SDK (see `src/lib/firebase/admin.ts`)
+- **Hosting:** Cloud Run (project `sard-508612`, region `me-west1`)
 - **Checkout:** cash on delivery for now; payment gateway integration planned later
 
 ## Getting started
@@ -18,7 +18,23 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-For local Firestore access, copy `.env.local.example` to `.env.local` and fill in a service account's credentials. On Cloud Run, Application Default Credentials are used automatically and no env vars are needed.
+For local Firestore access, run `gcloud auth application-default login` once (signed in with an account that has access to `sard-508612`) — the Admin SDK picks up Application Default Credentials automatically. Alternatively, copy `.env.local.example` to `.env.local` and fill in a service account's key.
+
+## Deployment
+
+Live at **https://sard-256609110246.me-west1.run.app** (Cloud Run service `sard`, region `me-west1`).
+
+Redeploy after changes:
+
+```bash
+docker build --platform linux/amd64 -t me-west1-docker.pkg.dev/sard-508612/sard-app/sard:latest .
+docker push me-west1-docker.pkg.dev/sard-508612/sard-app/sard:latest
+gcloud run deploy sard \
+  --image me-west1-docker.pkg.dev/sard-508612/sard-app/sard:latest \
+  --region me-west1
+```
+
+The Cloud Run service runs as a dedicated `sard-app@sard-508612.iam.gserviceaccount.com` service account with only `roles/datastore.user` (Firestore read/write) — no broad Editor role, no key file needed. Requires an amd64 build; on Apple Silicon, `--platform linux/amd64` cross-compiles via QEMU (slower, but correct).
 
 ## Project structure
 

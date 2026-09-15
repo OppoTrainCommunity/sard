@@ -8,6 +8,8 @@ export const siteConfig = {
   description:
     "سارد — متجر شوكولاتة وهدايا شوكولاتة أونلاين، يوصل إلى نابلس وبيت لحم ورام الله.",
   facebookUrl: "https://www.facebook.com/sardchocolate",
+  instagramUrl: "https://www.instagram.com/sardchocolate.ps",
+  tiktokUrl: "https://www.tiktok.com/@sardchocolate.ps",
   navLinks: [
     { href: "/", label: "الرئيسية" },
     { href: "/catalog", label: "المتجر" },

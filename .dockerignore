@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+.assets
+.claude
+.env*
+!.env.local.example
+npm-debug.log*
+*.md
